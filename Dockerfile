@@ -13,8 +13,7 @@ USER root
 #RUN apt-get update && apt-cache search modsecurity 
 
 RUN apt-get update && \
-    apt-get install -y libapache2-mod-php \
-                       php-cli \
+    apt-get install -y php-cli \
                        php \
                        php-mail \
                        php-json \
