@@ -36,8 +36,9 @@ RUN chmod +x /start
 # phpenmod short-open-tag && \
 RUN phpenmod phpenmod uploads && \
     phpenmod soap && \
-    a2enmod mpm_prefork \
-#    security && \
+    a2enmod mpm_prefork 
+# \
+#    phpenmod security && \
 #    a2enmod security2
 
 
