@@ -11,8 +11,8 @@ USER root
 RUN apt-get update && \
     apt-get install -y php-cli \
                        php \
-#                       php-mail \
-#                       php-json \
+                       php-mail \
+                       php-json \
                        php-readline \
                        php-redis \
                        php-memcache \
