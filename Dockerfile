@@ -8,8 +8,9 @@ USER root
 #libapache2-modsecurity \
 #                       libapache2-mod-php \
 
+RUN apt-get update && apt-cache search modsecurity 
+
 RUN apt-get update && \
-    apt-cache search modsecurity \
     apt-get install -y libapache2-modsecurity \
 #                       libapache2-mod-php \
                        php-cli \
