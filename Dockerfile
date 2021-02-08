@@ -34,7 +34,7 @@ RUN phpenmod security && \
     phpenmod uploads && \
     phpenmod soap && \
     a2enmod mpm_prefork 
-#    a2enmod security2
+    a2enmod security2
 
 
 
