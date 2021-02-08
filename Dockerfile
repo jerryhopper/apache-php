@@ -4,11 +4,12 @@ MAINTAINER  JerryHopper "hopper.jerry@gmail.com"
 USER root
 
 
-# Install Apache with PHP 
+# Install Apache with PHP
+#libapache2-modsecurity \
+#                       libapache2-mod-php \
+
 RUN apt-get update && \
-    apt-get install -y libapache2-modsecurity \
-                       libapache2-mod-php \
-                       php-cli \
+    apt-get install -y php-cli \
                        php \
                        php-mail \
                        php-json \
@@ -31,8 +32,8 @@ RUN phpenmod security && \
     phpenmod short-open-tag && \
     phpenmod uploads && \
     phpenmod soap && \
-    a2enmod mpm_prefork && \
-    a2enmod security2
+    a2enmod mpm_prefork 
+#    a2enmod security2
 
 
 
