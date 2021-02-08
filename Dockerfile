@@ -15,13 +15,13 @@ RUN apt-get update && \
 #                       php-json \
                        php-readline \
                        php-redis \
-#                       php-memcache \
-#                       php-apcu \
+                       php-memcache \
+                       php-apcu \
 #                       php-mcrypt \
                        php-curl \
-#                       php-gd \
-#                       php-pgsql \
-#                       php-mysql \
+                       php-gd \
+                       php-pgsql \
+                       php-mysql \
                        php-soap  && \
       apt-get clean && rm -rf /tmp/* /var/tmp/*
 
