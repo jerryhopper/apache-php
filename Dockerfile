@@ -25,6 +25,7 @@ RUN apt-get update && \
       apt-get clean && rm -rf /tmp/* /var/tmp/*
 
 ADD rootfs /
+RUN chmod +x /start
 
 RUN phpenmod security && \
     phpenmod short-open-tag && \
