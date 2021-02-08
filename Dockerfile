@@ -9,7 +9,8 @@ USER root
 #                       libapache2-mod-php \
 
 RUN apt-get update && \
-    apt-get install -y php-cli \
+    apt-get install -y libapache2-modsecurity \
+                       libapache2-mod-php \php-cli \
                        php \
                        php-mail \
                        php-json \
