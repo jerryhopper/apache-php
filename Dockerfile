@@ -25,7 +25,6 @@ RUN apt-get update && \
                        php-gd \
                        php-pgsql \
                        php-mysql \
-                       php-mcrypt \
                        php-soap  && \
       apt-get clean && rm -rf /tmp/* /var/tmp/*
 
