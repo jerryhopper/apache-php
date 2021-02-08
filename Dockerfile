@@ -34,7 +34,7 @@ RUN phpenmod security && \
     phpenmod short-open-tag && \
     phpenmod uploads && \
     phpenmod soap && \
-    a2enmod mpm_prefork 
+    a2enmod mpm_prefork \
     a2enmod security2
 
 
