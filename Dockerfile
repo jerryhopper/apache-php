@@ -10,7 +10,7 @@ USER root
 #                       php-mcrypt \
 
 
-RUN apt-get update && apt-cache search modsecurity 
+#RUN apt-get update && apt-cache search modsecurity 
 
 RUN apt-get update && \
     apt-get install -y libapache2-mod-php \
@@ -26,6 +26,7 @@ RUN apt-get update && \
                        php-gd \
                        php-pgsql \
                        php-mysql \
+                       php-mcrypt \
                        php-soap  && \
       apt-get clean && rm -rf /tmp/* /var/tmp/*
 
